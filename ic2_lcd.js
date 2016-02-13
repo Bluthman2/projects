@@ -7,7 +7,7 @@ console.log("Working on lcd!");
 lcd.clear();
 
 
-setTimeout( function(i){
-            console.log('Input: "' + i + '", Executed with timeout of ' + i*1000 + 'ms');
+setTimeout( function(){
+            console.log("In timeout");
             lcd.message('Hello World!');
-}, i*1000, i );
+}, 1000);
