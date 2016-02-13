@@ -4,9 +4,5 @@ lcd = new LCDPLATE(1, 0x27);
  
 // lcd.backlight(lcd.colors.RED);
 console.log("Working on lcd!");
+lcd.clear();
 lcd.message('Hello World!');
- 
-lcd.on('button_change', function(button) {
-  lcd.clear();
-  lcd.message('Button changed:\n' + lcd.buttonName(button));
-});
