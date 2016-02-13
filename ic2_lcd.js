@@ -6,8 +6,5 @@ lcd = new LCDPLATE(1, 0x27);
 console.log("Working on lcd!");
 lcd.clear();
 
+lcd.message('Hello World!');
 
-setTimeout( function(){
-            console.log("In timeout");
-            lcd.message('Hello World!');
-}, 1000);
