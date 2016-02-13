@@ -5,4 +5,9 @@ lcd = new LCDPLATE(1, 0x27);
 // lcd.backlight(lcd.colors.RED);
 console.log("Working on lcd!");
 lcd.clear();
-lcd.message('Hello World!');
+
+
+setTimeout( function(i){
+            console.log('Input: "' + i + '", Executed with timeout of ' + i*1000 + 'ms');
+            lcd.message('Hello World!');
+}, i*1000, i );
