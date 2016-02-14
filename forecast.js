@@ -18,11 +18,9 @@ var Forecast = require('forecast');
 forecast.get([28.0684783,-82.4498866], 
 	function(err, result) {
 		
-	if(err) return console.dir(err);
-	prettyPrint(result);
+		if(err) return console.dir(err);
+		prettyPrint(result);
 
-	function(err,result_f){
-	
 		console.log('Latitude: %s', result.latitude);
 		console.log('Longitude: %s', result.longitude);
 		console.log('Timezone: %s', result.timezone);
