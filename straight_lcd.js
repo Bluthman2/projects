@@ -9,7 +9,7 @@ var Lcd = require('lcd'),
  
 console.log("printing to lcd");
 lcd.on('ready', function() {
-  // lcd.print("Hello world!");
+  lcd.print("Hello world!");
   setInterval(function() {
     lcd.setCursor(0, 0);
     lcd.print(new Date().toString().substring(16, 24));
