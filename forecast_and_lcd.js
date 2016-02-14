@@ -48,7 +48,6 @@ lcd.on('ready', function() {
 			    result.currently.precipProbability
 			 );
 			lcd.print("Current temp: " + Math.round(parseFloat(result.currently.temperature, 10)));
-		}
 	});
 });
  
